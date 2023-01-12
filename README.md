@@ -41,5 +41,23 @@ I will use Python and SQLAlchemy to do a basic climate analysis and data explora
 Now that the initial analysis is complete, I’ll design a Flask API based on the queries that were developed. To do so, I will use Flask to create the routes as follows:
 * A homepage.
 * List all the available routes, including:
-*     /api/v1.0/precipitation
+1) /api/v1.0/precipitation - this API converts the query results from the precipitation analysis for the last 12 months of data to a dictionary (in JSON format) using "date" as the key and "prcp" as the value.
+2) /api/v1.0/stations - this returns a JSON list of stations from the dataset.
+3) /api/v1.0/tobs - this returns a JSON list of temperature observations for the previous year of the most-active station for the previous year of data.
+4) /api/v1.0/<start> and /api/v1.0/<start>/<end> - returns a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
+  
+### Observations
 
+#### Precipitation Analysis
+Analyzing total precipitation over a period of 12 months showed that, on average, Honolulu experiences a consistent level of precipitation, with the average precipitation being 0.18 inches, and standard deviation results showing that 68% of precipitation fell within 0.5 inches from the mean (in either direction).  Only during two dates within the 12-month period of observations did the precipitation exceed 6 inches.
+  
+![precipitation](https://user-images.githubusercontent.com/115101031/212152161-18928220-d4d1-4932-bec2-320617000376.jpg)
+![stats](https://user-images.githubusercontent.com/115101031/212155246-f17e3ef3-2ce6-4186-8c93-26c8add93817.jpg)
+  
+#### Station Analysis
+After finding the most active station (Station# USC00519281, with 2772 collected values), and therefore relying on the largest data set we could locate.  The results indicated that regardless of the timing of our planned trip, at most points in the year, the temperatures in Honolulu held steady in the 70's (farenheit), and peaked at about 75-76 degrees farenheit.  This offered us a lot of flexibility in planning our trip if we hope for nice weather.
+    
+![temperature](https://user-images.githubusercontent.com/115101031/212157724-314bc7a2-3cae-44e1-915e-5847dea19fbf.jpg)
+
+#### Climate API
+Having the opportunity to venture into some basic web development by compiling the data analysis into JSON dictionaries is a great way to share the results of the analysis.
