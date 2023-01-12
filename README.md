@@ -14,9 +14,21 @@ In the simplest form, it allows users to connect databases using Python language
 
 ![Python-and-Sqlite-and-SqlAlchemy-Oh-My_Watermarked](https://user-images.githubusercontent.com/115101031/212124991-d526f639-ba43-4dbc-a629-f07b1d85c672.jpg)
 
+This functionality extends to the development of web-based applications.  For example, in web applications, you may use a database to store and maintain data that needs to be retrieved and manipulated. You can add data to this database, retrieve it, modify it, or delete it, depending on different requirements and conditions; you can analyze data by creating APIs replete with JSON-built lists/dictionaries. Flask is a straightforward Python web framework that provides useful tools and features for creating web applications in the Python Language. Combined with SQLAlchemy and Python, Flask allows you to build web apps in Python. Flask provides an easy tool for developers because there is little boilerplate code for getting a simple app up and running.
+
 Sources:
 https://sqlalchemy.org/
 https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91
 https://www.datacamp.com/tutorial/sqlalchemy-tutorial-examples
+https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application
+
+
+## Case Study Details
+Having decided to treat myself to a bucket-list holiday in Hawaii, I don't want to leave anything to chance.  To help with trip planning, I have decided to develop a climate assessment of the area around Honolulu.  This will involve two key approaches:
+* Analyzing and exploring the climate data, including precipitation and temperatures across various weather stations across a period of 12 months
+* Designing a climate APP to share my results
+
+## Methodology
+
 
 
