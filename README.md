@@ -12,7 +12,7 @@ In simple terms, You can write a query in the form of a string or chain Python o
 
 In the simplest form, it allows users to connect databases using Python language, run SQL queries using object-based programming, and streamline workflow by working in a single framework.
 
-![Python-and-Sqlite-and-SqlAlchemy-Oh-My_Watermarked](https://user-images.githubusercontent.com/115101031/212124719-c3242313-00f9-4889-985f-6d7164b7fa96.jpg)
+![Python-and-Sqlite-and-SqlAlchemy-Oh-My_Watermarked](https://user-images.githubusercontent.com/115101031/212124991-d526f639-ba43-4dbc-a629-f07b1d85c672.jpg)
 
 Sources:
 https://sqlalchemy.org/
