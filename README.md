@@ -18,3 +18,5 @@ Sources:
 https://sqlalchemy.org/
 https://towardsdatascience.com/sqlalchemy-python-tutorial-79a577141a91
 https://www.datacamp.com/tutorial/sqlalchemy-tutorial-examples
+
+
