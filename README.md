@@ -41,5 +41,5 @@ I will use Python and SQLAlchemy to do a basic climate analysis and data explora
 Now that the initial analysis is complete, I’ll design a Flask API based on the queries that were developed. To do so, I will use Flask to create the routes as follows:
 * A homepage.
 * List all the available routes, including:
-**  /api/v1.0/precipitation
+*     /api/v1.0/precipitation
 
