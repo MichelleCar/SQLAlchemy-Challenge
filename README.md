@@ -23,12 +23,12 @@ https://www.datacamp.com/tutorial/sqlalchemy-tutorial-examples
 https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application
 
 
-## Case Study Details
+### Case Study Details
 Having decided to treat myself to a bucket-list holiday in Hawaii, I don't want to leave anything to chance.  To help with trip planning, I have decided to develop a climate assessment of the area around Honolulu.  This will involve two key approaches:
 * Analyzing and exploring the climate data, including precipitation and temperatures across various weather stations across a period of 12 months
 * Designing a climate APP to share my results
 
-## Methodology
+### Methodology
 
 
 
