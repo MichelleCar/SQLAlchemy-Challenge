@@ -12,9 +12,9 @@ In simple terms, You can write a query in the form of a string or chain Python o
 
 In the simplest form, it allows users to connect databases using Python language, run SQL queries using object-based programming, and streamline workflow by working in a single framework.
 
-![Python-and-Sqlite-and-SqlAlchemy-Oh-My_Watermarked](https://user-images.githubusercontent.com/115101031/212124991-d526f639-ba43-4dbc-a629-f07b1d85c672.jpg)
-
 This functionality extends to the development of web-based applications.  For example, in web applications, you may use a database to store and maintain data that needs to be retrieved and manipulated. You can add data to this database, retrieve it, modify it, or delete it, depending on different requirements and conditions; you can analyze data by creating APIs replete with JSON-built lists/dictionaries. Flask is a straightforward Python web framework that provides useful tools and features for creating web applications in the Python Language. Combined with SQLAlchemy and Python, Flask allows you to build web apps in Python. Flask provides an easy tool for developers because there is little boilerplate code for getting a simple app up and running.
+
+![Python-and-Sqlite-and-SqlAlchemy-Oh-My_Watermarked](https://user-images.githubusercontent.com/115101031/212124991-d526f639-ba43-4dbc-a629-f07b1d85c672.jpg)
 
 Sources:
 https://sqlalchemy.org/
@@ -29,6 +29,17 @@ Having decided to treat myself to a bucket-list holiday in Hawaii, I don't want 
 * Designing a climate APP to share my results
 
 ### Methodology
+#### Part 1: Analyze and Explore the Climate Data
+I will use Python and SQLAlchemy to do a basic climate analysis and data exploration of my climate database. Specifically, I'll use SQLAlchemy ORM queries, Pandas, and Matplotlib to complete the following steps:
+* Use the SQLAlchemy create_engine() function to connect to SQLite database of collected climate data.
+* Use the SQLAlchemy automap_base() function to reflect the tables into classes, and then save references to the classes named station and measurement.
+* Link Python to the database by creating a SQLAlchemy session.
+* Perform precipitation analysis by: finding the most recent date in the dataset, using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data, selecting only the "date" and "prcp" values, loading the query results into a Pandas DataFrame, and setting the index to the "date" column, sorting the DataFrame values by "date", plotting the results by using the DataFrame plot method, and using Pandas to print the summary statistics for the precipitation data.
+* Perform station analysis by: designing a query to calculate the total number of stations in the dataset, designing a query to find the most-active stations (that is, the stations that have the most rows) by listing the stations and observation counts in descending order and identifying which station id has the greatest number of observations, designing a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query, and finally, designing a query to get the previous 12 months of temperature observation (TOBS) data by filtering by the station that has the greatest number of observations, querying the previous 12 months of TOBS data for that station, and plotting the results as a histogram .
 
-
+#### Part 2: Design Your Climate App
+Now that the initial analysis is complete, I’ll design a Flask API based on the queries that were developed. To do so, I will use Flask to create the routes as follows:
+* A homepage.
+* List all the available routes, including:
+**  /api/v1.0/precipitation
 
